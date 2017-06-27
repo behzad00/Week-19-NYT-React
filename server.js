@@ -57,7 +57,7 @@ app.post("/api", function(req, res) {
   Article.create({
     title: req.body.title,
     url: req.body.url,
-    date: req.param.date
+    publishedDate: req.param.date
   }, function(err) {
     if (err) {
       console.log(err);
